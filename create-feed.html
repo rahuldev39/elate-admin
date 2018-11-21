@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Elate-Admin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="elate-header text-center">
+        <div class="logo-container">
+            <img src="./images/login-logo.png" alt="">
+            <span>A happier and healthier you!</span>
+        </div>
+
+        <div class="">
+          <a href="#" class="btn btn-default">Back</a>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="feed-container">
+
+          <div class="form-container">
+              <h4 class="form-title">Create Feed Post</h4>
+              <form  action="/file-upload" method="post">
+                <div class="form-group">
+                  <label for="">Author Name</label>
+                  <input type="text" name="" class="form-control" placeholder="Author Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="">Quote</label>
+                  <textarea name="name" rows="4" cols="80" placeholder="Please Enter Quote Here" class="form-control"></textarea>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">Upload Feed Image</label>
+
+                    <div class="dropzone"  id="feed-img">
+
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">Upload Feed Logo</label>
+
+                    <div class="dropzone"  id="feed-logo">
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <div class="form-footer">
+                <a href="#">Submit</a>
+                <a href="#">Close</a>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/dropzone.js"></script>
+
+    <script type="text/javascript">
+
+
+      $("#feed-img").dropzone({ url: "/file/post" });
+      $("#feed-logo").dropzone({ url: "/file/post" });
+    </script>
+
+  </body>
+
+</html>

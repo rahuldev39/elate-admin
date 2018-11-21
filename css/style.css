@@ -7,6 +7,7 @@ body{
     background-color: white;
     box-shadow: 0px 0px 10px #78acd873;
     border-radius: 9px;
+    margin-top: 10px;
 }
 .padder {
     padding: 5px 20px;
@@ -88,12 +89,68 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.elate-header img{
-
+.elate-header img {
+    display: block;
+    width: 114px;
+}
+.elate-header span {
+    display: block;
+    margin-top: 9px;
+    font-size: 12px;
 }
 .elate-header h4 {
     margin-bottom: 0px;
 }
 .elate-header span{
 
+}
+.btn-default {
+    background-color: #9acffc;
+    border: 2px solid white;
+    color: white;
+    padding: 3px 17px;
+    font-size: 15px;
+}
+.btn-default:hover {
+    background-color: white;
+    color: #9acffc;
+}
+.dropzone {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #9acffc;
+    border-radius: 13px;
+    color: #9acffc;
+}
+.form-container{
+  padding: 20px
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    font-size: 15px;
+}
+.form-control {
+    font-size: .95rem;
+}
+.form-title {
+    margin-bottom: 20px;
+}
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 11px;
+}
+.form-footer a {
+    display: inline-block;
+    padding: 3px 27px;
+    background-color: #91c5f1;
+    border-radius: 20px;
+    color: #ffffff;
+    border: 2px solid #91c4f1;
 }
